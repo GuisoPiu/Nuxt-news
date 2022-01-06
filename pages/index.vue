@@ -1,6 +1,7 @@
 <template>
 <div class="md-layout md-alignment-center">
   <!-- App Content -->
+  <div><p>Hola</p></div>
   <div class="md-layout-item.md-size-95">
     <md-content class="md-layout.md-gutter" style="background: #007998; padding: 1em">
       <ul v-for="headline in headlines" :key="headline.id" class="md-layout-item
