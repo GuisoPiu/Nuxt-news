@@ -1,6 +1,6 @@
 # nuxt-news
 
-> My stellar Nuxt.js project
+> Nuxt.js project with Firebase
 
 ## Build Setup
 
