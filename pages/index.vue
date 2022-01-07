@@ -1,8 +1,23 @@
 <template>
-<div class="md-layout md-alignment-center">
+<div class="md-layout md-alignment-center" style="margin: 4em 0">
+  <!--Top navigation -->
+  <md-toolbar class="fixed-toolbar" elevation="1">
+    <md-button class="md-button-icon">
+      <md-icon>menu</md-icon>
+    </md-button>
+    <nuxt-link class="md-primary md-title" to="/">
+      Nuxt news
+    </nuxt-link>
+
+    <div class="md-toolbar-section-end">
+      <md-button to="/login">Login</md-button>
+      <md-button to="/register">Register</md-button>
+    </div>
+  </md-toolbar>
+
   <!-- App Content -->
-  <div class="md-layout-item.md-size-95">
-    <md-content class="md-layout.md-gutter" style="background: #007998; padding: 1em">
+  <div class="md-layout-item md-size-95">
+    <md-content class="md-layout md-gutter" style="background: #007998; padding: 1em">
       <ul v-for="headline in headlines" :key="headline.id" class="md-layout-item
         md-large-size-25 md-medium-size-33 md-small-size-50 md-xsmall-size-100">
         <md-card style="margin-top: 1em;" md-with-hover>
@@ -59,5 +74,11 @@
 <style scoped>
   .small-icon {
     font-size: 18px !important;
+  }
+
+  .fixed-toolbar {
+    position: fixed;
+    top: 0;
+    z-index: 5;
   }
 </style>
